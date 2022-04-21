@@ -1,37 +1,103 @@
-## Welcome to GitHub Pages
+# Ссылки на профили в социальных сетях (для вставки)
+### Пример ([посмотреть на сайте](https://yarestem.github.io/social-links/))
 
-You can use the [editor on GitHub](https://github.com/yarestem/social-links/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+![img](https://user-images.githubusercontent.com/87089735/164549426-f36f48e6-d229-496e-8b5a-0f0d6e329fe5.png) 
+   
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Код
 
-### Markdown
+```html
+<head>
+  <style>
+    /* social links */
+    
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin-top: .25rem;
+      padding-left: 0;
+    }
+    
+    .social-icons>li {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+    }
+    
+    .social-icons a {
+      position: relative;
+      background-color: #eee;
+      display: block;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      transition: background-color .3s ease-in-out;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: .25rem;
+    }
+    
+    .social-icons a:hover {
+      background-color: #e0e0e0;
+    }
+    
+    .social-icons a::before {
+      content: "";
+      position: absolute;
+      width: 1.2rem;
+      height: 1.2rem;
+      left: .65rem;
+      top: .65rem;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+    
+    .social-icons .social-icon-home::before {
+      background-image: url("https://dwweb.ru/__img/icon/house/svg/home_12.svg");
+    }
+    
+    .social-icons .social-icon-git::before {
+      background-image: url("https://cdn-icons-png.flaticon.com/512/25/25231.png");
+    }
+    
+    .social-icons .social-icon-diskord::before {
+      background-image: url("https://www.svgrepo.com/show/353655/discord-icon.svg");
+    }
+    
+    .social-icons .social-icon-telegram::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%2327a7e7' d='M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z'/%3E%3C/svg%3E");
+    }
+    
+    .social-icons .social-icon-youtube::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3Cpath fill='%23ff0000' d='M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z'/%3E%3C/svg%3E");
+    }
+  </style>
+</head>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<body>
 
-```markdown
-Syntax highlighted code block
+  <div>
 
-# Header 1
-## Header 2
-### Header 3
+    <ul class="social-icons">
+      <li>
+        <a class="social-icon-home" href="http://yarestem.ga" title="Домой" target="_blank" rel="noopener"></a>
+      </li>
+      <li>
+        <a class="social-icon-git" href="https://www.github.com/yarestem" title="Профиль на GitHub" target="_blank" rel="noopener"></a>
+      </li>
+      <li>
+        <a class="social-icon-diskord" href="https://discord.gg/D8qbQ7qYxH" title="Diskord" target="_blank" rel="noopener"></a>
+      </li>
+      <li>
+        <a class="social-icon-telegram" href="https://t.me/yarestem" title="Telegram канал" target="_blank" rel="noopener"></a>
+      </li>
+      <li>
+        <a class="social-icon-youtube" href="https://www.youtube.com/c/UCbh6Tqnw22ZBRvELewUXgxA" title="Канал на Youtube" target="_blank" rel="noopener"></a>
+      </li>
+    </ul>
+  </div>
+</body>
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yarestem/social-links/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
